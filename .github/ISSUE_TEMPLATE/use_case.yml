@@ -1,0 +1,64 @@
+name:  Use Case
+description: Ca sử dụng – yêu cầu chức năng
+title: "[UC-XX] "
+labels: ["use-case", "RS"]
+assignees: []
+
+body:
+  - type: input
+    id: uc_id
+    attributes:
+      label: Use Case ID
+      placeholder: "UC-07"
+    validations:
+      required: true
+
+  - type: textarea
+    id: uc_name
+    attributes:
+      label: Tên Use Case
+      placeholder: "Thanh toán đơn hàng"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: actor
+    attributes:
+      label: Actor
+      options:
+        - Khách hàng
+        - Nhân viên bán hàng
+        - Nhân viên kho
+        - Nhân viên giao hàng
+        - Quản lý
+        - Hệ thống
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_feature
+    attributes:
+      label: Feature liên quan
+      placeholder: "FT-04"
+
+  - type: textarea
+    id: main_flow
+    attributes:
+      label: Luồng chính
+      placeholder: |
+        1. Chọn phương thức thanh toán
+        2. Nhập thông tin
+        3. Xác nhận thanh toán
+        4. Hệ thống xử lý
+
+  - type: textarea
+    id: alternative_flow
+    attributes:
+      label: Luồng thay thế / ngoại lệ
+      placeholder: "Thanh toán thất bại → thông báo lỗi"
+
+  - type: textarea
+    id: post_condition
+    attributes:
+      label: Kết quả
+      placeholder: "Đơn hàng được cập nhật trạng thái"
