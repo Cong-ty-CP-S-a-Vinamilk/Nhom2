@@ -1,0 +1,53 @@
+name:  Feature
+description: Tính năng hệ thống để đáp ứng Needs
+title: "[FT-XX] "
+labels: ["feature"]
+assignees: []
+
+body:
+  - type: input
+    id: feature_id
+    attributes:
+      label: Feature ID
+      placeholder: "FT-04"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_name
+    attributes:
+      label: Tên Feature
+      placeholder: "Thanh toán đa kênh"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_needs
+    attributes:
+      label: Need liên quan
+      placeholder: "NEED-04"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả Feature
+      placeholder: |
+        Hỗ trợ nhiều phương thức thanh toán an toàn
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Phạm vi chức năng
+      placeholder: |
+        - Ví điện tử
+        - Thẻ ngân hàng
+        - COD
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Độ ưu tiên
+      options:
+        - Rất cao
+        - Cao
+        - Trung bình
