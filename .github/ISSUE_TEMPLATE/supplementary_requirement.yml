@@ -1,0 +1,49 @@
+name:  Supplementary Requirement
+description: Yêu cầu phi chức năng
+title: "[NFR-XX] "
+labels: ["SR"]
+assignees: []
+
+body:
+  - type: input
+    id: nfr_id
+    attributes:
+      label: NFR ID
+      placeholder: "P03, SE01"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Loại yêu cầu
+      options:
+        - Usability
+        - Performance
+        - Security
+        - Reliability
+        - Supportability
+        - Design Constraint
+        - Interface
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả yêu cầu
+      placeholder: "Thời gian xử lý thanh toán < 5 giây"
+    validations:
+      required: true
+
+  - type: textarea
+    id: metric
+    attributes:
+      label: Chỉ số đo lường / Tiêu chí kiểm thử
+      placeholder: "< 5 giây / ≥ 1000 đơn/giây"
+
+  - type: textarea
+    id: related_uc
+    attributes:
+      label: Use Case áp dụng
+      placeholder: "UC-07"
