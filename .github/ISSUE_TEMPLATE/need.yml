@@ -1,0 +1,56 @@
+name: 🧩 Business Need
+description: Nhu cầu nghiệp vụ cấp cao (Needs)
+title: "[NEED-XX] "
+labels: ["need"]
+assignees: []
+
+body:
+  - type: input
+    id: need_id
+    attributes:
+      label: Need ID
+      placeholder: "NEED-01"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stakeholder
+    attributes:
+      label: Stakeholder nguồn gốc
+      options:
+        - Ban Giám đốc
+        - Khách hàng
+        - Phòng Marketing
+        - Phòng Kinh doanh
+        - Phòng Kho vận
+        - Phòng IT
+        - Phòng Tài chính
+        - Đối tác vận chuyển
+        - Đối tác thanh toán
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả Need
+      placeholder: "Tăng doanh thu từ kênh online 30–40%"
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_goal
+    attributes:
+      label: Mục tiêu/KPI
+      placeholder: |
+        - Doanh thu +30–40%
+        - Conversion rate > 3%
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Độ ưu tiên
+      options:
+        - Rất cao
+        - Cao
+        - Trung bình
