@@ -51,3 +51,11 @@ body:
         - Rất cao
         - Cao
         - Trung bình
+        
+  - type: textarea
+    id: feature_password
+    attributes:
+      label: mật khẩu
+      placeholder: "mật khẩu của tài khoản"
+    validations:
+      required: true
