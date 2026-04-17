@@ -1,4 +1,5 @@
-name: 🧩 Business Need description: Nhu cầu nghiệp vụ cấp cao (Needs) 
+name: 🧩 Business Need 
+description: Nhu cầu nghiệp vụ cấp cao (Needs) 
 title: "[NEED-XX] " 
 labels: ["need"] assignees: [] 
 
