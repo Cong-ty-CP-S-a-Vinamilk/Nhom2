@@ -1,7 +1,8 @@
 name: 🧩 Business Need 
 description: Nhu cầu nghiệp vụ cấp cao (Needs) 
 title: "[NEED-XX] " 
-labels: ["need"] assignees: [] 
+labels: ["need"] 
+assignees: [] 
 
 body: 
   - type: input 
