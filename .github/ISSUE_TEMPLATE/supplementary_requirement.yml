@@ -1,50 +1,101 @@
-name:  Supplementary Requirement
-description: Yêu cầu phi chức năng
-title: "[NFR-XX] "
+name: " Supplementary Requirement"
+description: "Yêu cầu phi chức năng (Non-functional requirements)"
+title: "[SUP-XX] "
 labels: ["SR"]
 assignees: []
 
 body:
   - type: input
-    id: nfr_id
+    id: sup_id
     attributes:
-      label: NFR ID
-      placeholder: "P03, SE01"
+      label: SUP ID
+      placeholder: "SUP-01"
     validations:
       required: true
 
   - type: dropdown
     id: category
     attributes:
-      label: Loại yêu cầu
+      label: Loại yêu cầu (Requirement Type)
       options:
-        - Usability
-        - Performance
-        - Security
-        - Reliability
-        - Other
-        - Supportability
-        - Design Constraint
-        - Interface
-    validations:
-      required: true
+        - Performance (Hiệu năng)
+        - Security (Bảo mật)
+        - Usability (Khả dụng)
+        - Reliability (Độ tin cậy)
+        - Availability (Khả dụng)
+        - Maintainability (Bảo trì)
+        - Scalability (Khả năng mở rộng)
+        - Compliance (Tuân thủ)
+        - Interface (Giao diện/Giao tiếp)
+    
 
   - type: textarea
     id: description
     attributes:
-      label: Mô tả yêu cầu
-      placeholder: "Thời gian xử lý thanh toán < 5 giây"
-    validations:
-      required: true
+      label: Mô tả 
+      placeholder: "Trang danh sách và chi tiết sản phẩm phải tải trong < 2 giây với lưu lượng thông thường."
+    
+
+  
+    
 
   - type: textarea
-    id: metric
+    id: related_features
     attributes:
-      label: Chỉ số đo lường / Tiêu chí kiểm thử
-      placeholder: "< 5 giây / ≥ 1000 đơn/giây"
+      label: Feature liên quan
+      description: "Các Feature chịu ảnh hưởng bởi yêu cầu này"
+      placeholder: "FEAT-01, FEAT-02"
 
-  - type: textarea
-    id: related_uc
+  - type: dropdown
+    id: priority
     attributes:
-      label: Use Case áp dụng
-      placeholder: "UC-07"
+      label: Priority (Độ ưu tiên)
+      options:
+        - High
+        - Medium
+        - Low
+    
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Proposed
+        - In Progress
+        - Implemented
+        - Verified
+        - Done
+
+        
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty (Độ khó)
+      options:
+        - Low
+        - Medium
+        - High
+
+  - type: dropdown
+    id: stability
+    attributes:
+      label: Stability (Độ ổn định)
+      options:
+        - Ổn định
+        - Có thể thay đổi
+
+  - type: input
+    id: assigned_to
+    attributes:
+      label: Assigned to (Nhóm phụ trách)
+      placeholder: "Nhóm Backend"
+
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost (Chi phí ước lượng)
+      options:
+        - Low
+        - Medium
+        - High
