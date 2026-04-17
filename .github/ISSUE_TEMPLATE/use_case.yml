@@ -1,5 +1,5 @@
-name:  Use Case
-description: Ca sử dụng – yêu cầu chức năng
+name: " Use Case"
+description: "Ca sử dụng – yêu cầu chức năng "
 title: "[UC-XX] "
 labels: ["use-case", "RS"]
 assignees: []
@@ -9,56 +9,126 @@ body:
     id: uc_id
     attributes:
       label: Use Case ID
-      placeholder: "UC-07"
+      placeholder: "UC-02"
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: uc_name
     attributes:
       label: Tên Use Case
-      placeholder: "Thanh toán đơn hàng"
+      placeholder: "Tạo yêu cầu mua hàng"
     validations:
       required: true
 
   - type: dropdown
     id: actor
     attributes:
-      label: Actor
+      label: Actor (Tác nhân chính)
       options:
-        - Khách hàng
-        - Nhân viên bán hàng
-        - Nhân viên kho
-        - Nhân viên giao hàng
-        - Quản lý
+        - Khách hàng (Customer)
+        - Quản trị viên (Admin)
+        - Ban Lãnh đạo Vinamilk
+        - Phòng Marketing Vinamilk
+        - Phòng Kho vận (Logistics)
+        - Bộ phận CSKH (Customer Service)
+        - Hệ thống AI
         - Hệ thống
-    validations:
-      required: true
+    
 
   - type: textarea
-    id: related_feature
+    id: related_features
     attributes:
-      label: Feature liên quan
-      placeholder: "FT-04"
+      label: Feature ánh xạ (Kế thừa Feature)
+      description: "Các Feature liên quan đến Use Case này"
+      placeholder: "FEAT-01, FEAT-02"
+    
 
   - type: textarea
-    id: main_flow
+    id: description
     attributes:
-      label: Luồng chính
-      placeholder: |
-        1. Chọn phương thức thanh toán
-        2. Nhập thông tin
-        3. Xác nhận thanh toán
-        4. Hệ thống xử lý
+      label: Mô tả Use Case
+      placeholder: "Nhân viên tạo yêu cầu mua sản phẩm trên hệ thống"
+    
 
-  - type: textarea
-    id: alternative_flow
+  - type: input
+    id: property
     attributes:
-      label: Luồng thay thế / ngoại lệ
-      placeholder: "Thanh toán thất bại → thông báo lỗi"
+      label: Property (Thuộc tính/Phân loại)
+      placeholder: "Nghiệp vụ mua hàng"
 
-  - type: textarea
-    id: post_condition
+  - type: dropdown
+    id: affects_architecture
     attributes:
-      label: Kết quả
-      placeholder: "Đơn hàng được cập nhật trạng thái"
+      label: Affects Architecture (Ảnh hưởng kiến trúc)
+      options:
+        - Có
+        - Không
+
+  - type: input
+    id: planned_iteration
+    attributes:
+      label: Planned Iteration
+      placeholder: "Sprint 1"
+
+  - type: input
+    id: assigned_to
+    attributes:
+      label: Assigned to
+      placeholder: "Phòng mua hàng"
+
+  - type: input
+    id: test
+    attributes:
+      label: Test 
+      placeholder: "TC-02"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Proposed
+        - In Progress
+        - Implemented
+        - Verified
+        - Done
+
+        
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Low
+        - Medium
+        - High
+
+  - type: dropdown
+    id: stability
+    attributes:
+      label: Stability
+      options:
+        - Ổn định
+        - Có thể thay đổi
+
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost
+      options:
+        - Low
+        - Medium
+        - High
+
+  
