@@ -77,8 +77,21 @@ body:
     id: assigned_to
     attributes:
       label: Assigned to
-      description: "Nhóm/Người phụ trách"
-      placeholder: "Nhóm Frontend"
+      options:
+        - Nhóm Frontend
+        - Nhóm Backend
+        - Nhóm Vận hành
+        - Nhóm AI
+        - Nhóm Admin
+        - Nhóm Báo cáo
+        - Nhóm Bảo mật
+        - Nhóm Marketing
+        - Nhóm CSKH
+
+    
+      
+      
+    
       
   - type: textarea
     id: rationale
