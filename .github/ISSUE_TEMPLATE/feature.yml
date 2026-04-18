@@ -42,12 +42,7 @@ body:
         - Low
     
 
-  - type: input
-    id: planned_iteration
-    attributes:
-      label: Planned Iteration
-      description: "Sprint dự kiến thực hiện"
-      placeholder: "Sprint 1"
+  
 
   - type: dropdown
     id: difficulty
