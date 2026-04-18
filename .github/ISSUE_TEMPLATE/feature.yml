@@ -78,6 +78,7 @@ body:
       label: Status
       options:
         - Proposed
+        - Approved
         - In Progress
         - Implemented
         - Verified
