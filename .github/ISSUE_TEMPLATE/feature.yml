@@ -14,13 +14,7 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: feature_name
-    attributes:
-      label: Tên Feature
-      placeholder: "Tìm kiếm và xem thông tin sản phẩm"
-    validations:
-      required: true
+  
 
   - type: textarea
     id: related_needs
