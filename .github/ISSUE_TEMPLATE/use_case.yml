@@ -13,13 +13,7 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: uc_name
-    attributes:
-      label: Tên Use Case
-      placeholder: "Tạo yêu cầu mua hàng"
-    validations:
-      required: true
+  
 
   - type: dropdown
     id: actor
