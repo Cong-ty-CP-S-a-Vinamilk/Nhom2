@@ -71,11 +71,7 @@ body:
       label: Assigned to
       placeholder: "Phòng mua hàng"
 
-  - type: input
-    id: test
-    attributes:
-      label: Test 
-      placeholder: "TC-02"
+  
 
   - type: dropdown
     id: priority
