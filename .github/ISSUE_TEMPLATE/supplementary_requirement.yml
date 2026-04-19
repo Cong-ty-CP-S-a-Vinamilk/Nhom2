@@ -5,13 +5,7 @@ labels: ["SR"]
 assignees: []
 
 body:
-  - type: input
-    id: sup_id
-    attributes:
-      label: SUP ID
-      placeholder: "SUP-01"
-    validations:
-      required: true
+  
 
   - type: dropdown
     id: category
