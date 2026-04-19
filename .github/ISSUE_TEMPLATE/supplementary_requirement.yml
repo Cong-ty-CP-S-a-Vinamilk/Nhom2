@@ -12,15 +12,16 @@ body:
     attributes:
       label: Loại yêu cầu (Requirement Type)
       options:
-        - Performance (Hiệu năng)
-        - Security (Bảo mật)
-        - Usability (Khả dụng)
-        - Reliability (Độ tin cậy)
-        - Availability (Khả dụng)
-        - Maintainability (Bảo trì)
-        - Scalability (Khả năng mở rộng)
-        - Compliance (Tuân thủ)
-        - Interface (Giao diện/Giao tiếp)
+        - Hiệu năng trang sản phẩm
+        - Bảo mật thanh toán
+        - Bảo mật tài khoản người dùng
+        - Hiệu suất bộ lọc tìm kiếm
+        - Độ khả dụng API vận chuyển
+        - Độ chính xác AI đề xuất sản phẩm
+        - Quy trình đặt hàng nhanh
+        - Khả năng mở rộng hệ thống
+        - Độ chính xác báo cáo và xuất file
+        - Tuân thủ bảo mật dữ liệu người dùng
     
 
   - type: textarea
