@@ -24,6 +24,7 @@ body:
         - Tuân thủ bảo mật dữ liệu người dùng
         - Cập nhật trạng thái đơn hàng real-time
         - Chatbot phản hồi nhanh
+        - Khả năng mở rộng hệ thống
     
 
   - type: textarea
