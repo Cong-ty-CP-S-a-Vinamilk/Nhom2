@@ -13,21 +13,7 @@ body:
     validations:
       required: true
 
-  
 
-  - type: dropdown
-    id: actor
-    attributes:
-      label: Actor (Tác nhân chính)
-      options:
-        - Khách hàng (Customer)
-        - Quản trị viên (Admin)
-        - Ban Lãnh đạo Vinamilk
-        - Phòng Marketing Vinamilk
-        - Phòng Kho vận (Logistics)
-        - Bộ phận CSKH (Customer Service)
-        - Hệ thống AI
-        - Hệ thống
     
 
   - type: textarea
