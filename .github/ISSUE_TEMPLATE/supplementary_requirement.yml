@@ -22,6 +22,7 @@ body:
         - Khả năng mở rộng hệ thống
         - Độ chính xác báo cáo và xuất file
         - Tuân thủ bảo mật dữ liệu người dùng
+        - Cập nhật trạng thái đơn hàng real-time
     
 
   - type: textarea
