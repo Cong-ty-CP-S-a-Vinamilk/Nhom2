@@ -23,6 +23,7 @@ body:
         - Độ chính xác báo cáo và xuất file
         - Tuân thủ bảo mật dữ liệu người dùng
         - Cập nhật trạng thái đơn hàng real-time
+        - Chatbot phản hồi nhanh
     
 
   - type: textarea
